@@ -1,0 +1,7 @@
+<div class="row {{#if is_top}}js-top{{/if}}">
+  <div class="col-md-2">
+    <input type="checkbox" class="dot-status" {{#is status 'complete'}}checked{{/is}}/>
+  </div>
+  <div class="col-md-9 dot-name">{{ name }}</div>
+  <div class="col-md-1 dot-prioritize" data-dot-id={{ id }}>TOP</div>
+</div>

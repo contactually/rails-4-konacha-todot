@@ -1,0 +1,19 @@
+@import 'bootstrap';
+
+.dot-view {
+  .dot-prioritize {
+    color: #ddd;
+  }
+
+  &:hover {
+    & .dot-prioritize {
+      color: black;
+      cursor: pointer;
+    }
+  }
+  &.js-top {
+    .dot-name {
+      @extend .bg-primary;
+    }
+  }
+}
